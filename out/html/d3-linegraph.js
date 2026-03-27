@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
+        parties = ['lewica', 'ko', 'pis', 'konfederacja', 'psl', 'polska 2050', 'kukiz'15', 'other'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0'};
+        partyColors = {'lewica': '#E3000F', 'ko': '#8B0000', 'pis': '#DCCA4A', 'konfederacja': '#000', 'psl': '#D5AC27', 'polska 2050': '#3f7bc1', 'kukiz'15': '#954B00', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
+        partyNames = {'lewica': 'Lewica', 'ko': 'KO', 'pis': 'PIS', 'konfederacja': 'Konfederacja', 'psl': 'PSL', 'polska 2050': 'Polska 2050', 'kukiz'15': 'Kukiz'15', 'other': 'Others'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
